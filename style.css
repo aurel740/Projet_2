@@ -8,22 +8,32 @@
 
 body
 {
-    padding: 55px 55px 0px 55px;
+    padding:0px 80px ;
 }
 
 a
 {
     text-decoration: none;
     color: black;
+    font-size: 1.2em;
 }
 h1
 {
-    font-size: 22px;
-    margin-bottom: 8px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 h2
 {
     padding-bottom: 20px;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+p{
+    font-size: 1em;
 }
 .fa-solid
 {
@@ -32,9 +42,17 @@ h2
 
 span
 {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bold;
 }
+
+.logo
+{
+    height: 2em;
+    width: auto;
+    padding-left: 0%;
+}
+
 /* général */
 
 /* nav début */
@@ -44,6 +62,7 @@ nav
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3em;
 }
 nav img
 {
@@ -55,6 +74,10 @@ padding: 44px 55px;
 nav a
 {
     padding: 44px 60px;
+}
+.lodge:hover ,.act:hover
+{
+    border-top:5px solid #0065FC;
 }
 
 /* nav fin*/
@@ -69,15 +92,18 @@ form
 {
     display: flex;
     flex-direction: row;
+    height: 4em;
+    margin: 2em 0em;
 }
 
 .fa-location-dot
 {
-    border: 1px solid #F2F2F2;
-    padding: 15px;
+    border: 0.2em solid #F2F2F2;
     background: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     color: #000;
+    font-size: 1.5em;
+    padding: 0.7em 1em 1em 1em;
     
 }
 
@@ -85,6 +111,7 @@ form
 {
     padding: 0px 17px 0px 10px;
     border: 1px solid #F2F2F2;
+    width: 20em;
 }
 
 ::placeholder
@@ -111,17 +138,16 @@ form
 /* formulaire fin */
 
 /* filtre début */
+
 .filter
 {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
-.filter span
-{
-    margin: auto 0%;
-}
 
 .btn .fa-solid
 {
@@ -135,24 +161,33 @@ form
     border-radius: 25px;
     margin: 0px 20px;
     font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btn:hover
+{
+    background-color: rgb(222, 235, 255);
 }
 
 /* Filtre fin */
 
 /* ligne début */
 
-.ligne
+.row
 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
 }
 .circle
 {
-    border: solid 1px #F2F2F2;
+    border: solid 0.2em #F2F2F2;
     height: 24px;
     width: 24px;
     border-radius: 50% / 50%;
     text-align: center;
+    margin-right: 0.5em;
 }
 
 .fa-info
@@ -161,40 +196,63 @@ form
     font-size: 10px;
 }
 
-
-.ligne p
-{
-    padding-top: 5px;
-    padding-left: 10px;
-}
 /* ligne fin*/
 
 
-
-
 /* partie lodging avec hébergements à marseille + les plus populaires*/
-
-
-
-/* hébergement début */
+/* en commun */
 #lodging
 {
      display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .MarseilleLodging , .popular
 {
     background-color: #F2F2F2;
-    max-height: 626px;
+    height: auto;
     border-radius: 20px;
     padding: 40px;
+    margin-bottom: 3em;
 }
-.container a , .container-popular a
+
+.container-lodging a , .container-popular a
 {
     background-color: white;
     border-radius: 20px;
     border: 2px solid white;
+    display: flex;
+}
+
+.star , a p , a h3
+{
+    padding-left: 1em;
+}
+.star{
+    padding-bottom: 0.5em;
+}
+
+/* hébergement début */
+
+
+/* partie hébergement */
+
+.MarseilleLodging
+{
+    width: 55%;
+}
+.popular
+{
+    width:30%;
+}
+
+
+.container-lodging a
+{
+    height: 15em;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .star-grey
@@ -202,36 +260,30 @@ form
     color: #F2F2F2;
 }
 
-.container img
+.container-lodging img
 {
-    height: 124px;
-    width: 99%;
+    height: 9em;
+    width: 100%; 
     border-radius: 20px 20px 0px 0px;
-    border: 2px solid white;
 }
-.container
+.container-lodging
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 3em; 
 }
 
-.container h3,p,.star
-{
-    padding: 5px 10px;
-}
-
+/* partie populaire */
 .container-popular a
 {
 display: flex;
 flex-direction: row;
-margin-bottom: 30px;
-max-width: 340px;
+margin-bottom: 40px;
 }
 .container-popular img
 {
-    height: 10rem;
-    width: 145px;
+    height: 10em;
+    width: 10em;
     border-radius: 20px 0px 0px 20px;
     border: 2px solid white;
 }
@@ -242,16 +294,46 @@ max-width: 340px;
     justify-content: space-between;
 }
 
+.presentation
+{
+    padding-top: 0.5em;
+}
+
+.description-popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* section activités */
 
 .container-activities
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .container-activities a
 {
-    border: 1px solid black;
-    
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.082);
+    height: 30em;
+    width: 20em;
+}
+
+.container-activities img
+{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container-activities h3
+{
+    padding-top: 0.5em;
 }
