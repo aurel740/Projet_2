@@ -37,7 +37,7 @@ span
 }
 /* général */
 
-/* nav */
+/* nav début */
 nav
 {
     display: flex;
@@ -57,16 +57,36 @@ nav a
     padding: 44px 60px;
 }
 
-/* nav */
+/* nav fin*/
+
 
 /* partie recherche et filtre */
 
-/* formulaire */
+
+/* formulaire début*/
+
 form
 {
     display: flex;
     flex-direction: row;
 }
+
+.fa-location-dot
+{
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    background: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    color: #000;
+    
+}
+
+.champ
+{
+    padding: 0px 17px 0px 10px;
+    border: 1px solid #F2F2F2;
+}
+
 ::placeholder
 {
     font-weight: bold;
@@ -75,14 +95,22 @@ form
     font-size: 18px;
     
 }
-.champ
-{
-    padding: 0px 17px 0px 10px;
-    border: 1px solid #F2F2F2;
-}
-/* formulaire */
 
-/* filtre */
+.recherche
+{
+    border: 1px solid #0065FC;
+    text-align: center;
+    background: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 16px;
+}
+
+/* formulaire fin */
+
+/* filtre début */
 .filter
 {
     display: flex;
@@ -108,32 +136,16 @@ form
     margin: 0px 20px;
     font-weight: bold;
 }
-/* filtre */
 
+/* Filtre fin */
 
-.fa-location-dot
+/* ligne début */
+
+.ligne
 {
-    border: 1px solid #F2F2F2;
-    padding: 15px;
-    background: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    color: #000;
-    
+    display: flex;
+    flex-direction: row;
 }
-
-.recherche
-{
-    border: 1px solid #0065FC;
-    text-align: center;
-    background: #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 16px;
-}
-
-
 .circle
 {
     border: solid 1px #F2F2F2;
@@ -149,19 +161,22 @@ form
     font-size: 10px;
 }
 
-.ligne
-{
-    display: flex;
-    flex-direction: row;
-}
+
 .ligne p
 {
     padding-top: 5px;
     padding-left: 10px;
 }
+/* ligne fin*/
+
+
+
 
 /* partie lodging avec hébergements à marseille + les plus populaires*/
 
+
+
+/* hébergement début */
 #lodging
 {
      display: flex;
