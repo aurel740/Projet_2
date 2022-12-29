@@ -13,8 +13,8 @@
             <nav>
                 <img src="images_Booki/logo/Booki.png" alt="Logo Booki" class="logo">
                 <div>
-                    <a href="#lodging">Hébergements</a>
-                    <a href="#activities">Activités</a>
+                    <a class="lodge" href="#lodging">Hébergements</a>
+                    <a class="act" href="#activities">Activités</a>
                 </div>
             </nav>
             <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
@@ -22,9 +22,9 @@
         </header>
         <main>
             <section class="search">                                 
-                <form action="">
+                <form action="" method="get">
                     <i class="fa-solid fa-location-dot"></i> 
-                    <input class="champ" type="text" placeholder="Marseille, France" />
+                    <input class="champ" type="text" name="search-bar" placeholder="Marseille, France" />
                     <button class="recherche">Rechercher</button>
                 </form>
             <div class="filter">
@@ -36,7 +36,7 @@
                     <button class="btn"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
                 </div>
             </div>
-               <div class="ligne">
+               <div class="row">
                <div class="circle"><i class="fa-solid fa-info"></i></div>
                <p> Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
@@ -44,7 +44,7 @@
             <section id="lodging">
                 <div class="MarseilleLodging">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="container">
+                    <div class="container-lodging">
                         <a href="">
                             <img src="Images_Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                             <h3>Auberge La Canebière</h3>
@@ -68,6 +68,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="star-grey fa-solid fa-star"></i>
                             </div>
+
                         </a>
                         <a href="">
                             <img src="Images_Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
@@ -118,7 +119,6 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
                 <div class="popular">
                     <div class="title-popular">
@@ -129,8 +129,10 @@
                         <a href="">
                             <img src="Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                             <div class="description-popular">
+                                <div class="presentation">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
+                        </div>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -143,8 +145,10 @@
                         <a href="">
                             <img src="Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                             <div class="description-popular">
+                                <div class="presentation">
                             <h3>Chambre d'hôtel Au coeur de l'eau</h3>
                             <p>Nuit à partir de 71€</p>
+                        </div>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -157,8 +161,10 @@
                         <a href="">
                             <img src="Images_Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                             <div class="description-popular">
+                                <div class="presentation">
                             <h3>Hôtel Bleu et Blanc</h3>
                             <p>Nuit à partir de 68€</p>
+                        </div>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -191,9 +197,6 @@
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </a>
                 </div>
-
-
-
             </section>
         </main>
         <footer>
