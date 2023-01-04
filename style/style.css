@@ -73,6 +73,11 @@ nav
     text-align: center;
 }
 
+.act:hover , .act:active , .lodge:hover, .lodge:active
+{
+    color: #0065FC;
+}
+
 /* partie recherche et filtre */
 
 /* formulaire*/
@@ -128,7 +133,7 @@ form
     font-weight: bold;
 }
 
-.btn:hover
+.btn:hover , .btn:active
 {
     background-color: rgb(222, 235, 255);
 }
@@ -194,7 +199,7 @@ form
 .container-lodging a
 {
     flex-direction: column;
-    height: 13.5em ;
+    height: 230px ;
 }
 
 .star-grey
@@ -206,10 +211,7 @@ form
 {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    height: 55%;
     width: 100%;
-
-    height: 55%;
 }
 
 /* partie populaire */
@@ -257,7 +259,6 @@ form
 
 .container-activities img
 {
-    height: 85%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -395,6 +396,10 @@ li
     height: 25em;
     width: 22%;
 }
+.container-activities img 
+{
+    height: 330px;
+}
 
 }
 
@@ -410,7 +415,7 @@ body
 
 @media screen and (min-width:769px) {
 /* nav */
-.act:hover ,.lodge:hover
+.act:hover , .act:active ,.lodge:hover , .lodge:active
 {
     border-top:5px solid #0065FC;
 }
@@ -441,7 +446,10 @@ nav a
     padding: 0px 16px;
 
 }
-
+.container-lodging img
+{
+  height: 55%;
+}
 /* footer */
 
 .footer-div
@@ -541,6 +549,10 @@ nav a
     width: 22%;
     padding-bottom: 3em;
 }
+.container-activities img 
+{
+    height: 190px;
+}
 
 }
 
@@ -556,7 +568,7 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
 }
-.act:hover ,.lodge:hover
+.act:hover , .act:active ,.lodge:hover , .lodge:active
 {
  border-bottom:5px solid #0065FC;
  margin-bottom: -5px;
@@ -663,6 +675,10 @@ header p , header h1
 {
     display: none;
 }
+.container-lodging img
+{
+    height:150px;
+}
 
 /* populaire */
 .popular
@@ -700,6 +716,10 @@ header p , header h1
     padding: 0em 2.5em;
 }
 
+.container-activities img 
+{
+    height: 190px;
+}
 /* footer */
     footer
     {
