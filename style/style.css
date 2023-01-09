@@ -178,7 +178,7 @@ form
 
 .lodging-presentation p ,.presentation p
 {
-    padding: 5px 0px;
+    padding: 2px 0px;
 }
 
 /* partie hébergement */
@@ -199,7 +199,6 @@ form
 .container-lodging a
 {
     flex-direction: column;
-    height: 230px ;
 }
 
 .star-grey
