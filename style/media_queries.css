@@ -187,7 +187,6 @@ nav a
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 50px;
-    height: 100%;
     align-items: center;
 }
 .MarseilleLodging , .popular
@@ -399,7 +398,6 @@ header p , header h1
 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
 }
 
 .container-activities a 
