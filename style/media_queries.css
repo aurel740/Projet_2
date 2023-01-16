@@ -328,7 +328,7 @@ header p , header h1
 }
 .btn
 {
-    padding: 10px 5px;
+    padding: 10px 5px 10px 20px;
     text-align: start;
     font-size: 0.8em;
 }
@@ -402,8 +402,7 @@ header p , header h1
 
 .container-activities a 
 {
-    max-height: 13.5em;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 #activities
 {
